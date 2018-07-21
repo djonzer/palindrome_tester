@@ -6,10 +6,10 @@ function palindromeTester() {
     let palindromeResult = document.querySelector("#palindromeResult");
     
     if (phrase.palindrome()) { 
-        palindromeResult.innerHTML = `<strong>"${phrase.content}"</strong> is a palindrome!`;
+        palindromeResult.innerHTML = `"${phrase.content}" is a palindrome!`;
         
     } else { 
-        palindromeResult.innerHTML = `<strong>"${phrase.content}"</strong> is not a palindrome.`;
+        palindromeResult.innerHTML = `"${phrase.content}" is not a palindrome.`;
     } 
 } 
 
