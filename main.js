@@ -13,5 +13,5 @@ function palindromeTester() {
 
 document.addEventListener("DOMContentLoaded", function() { 
     let button = document.querySelector("#palindromeTester"); 
-    button.addEventListener("click", palindromeTester()); 
+    button.addEventListener("click", palindromeTester); 
 });
