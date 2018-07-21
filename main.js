@@ -1,4 +1,4 @@
-let Phrase = require("<username>-palindrome"); 
+let Phrase = require("djonzer-palindromejs"); 
 
 function palindromeTester() { 
     let string = prompt("Please enter a string for palindrome testing:"); 
