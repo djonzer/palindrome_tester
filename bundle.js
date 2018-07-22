@@ -41,19 +41,13 @@ function Phrase(content) {
     // Returns the letters in the content.
     this.letters = function letters () {
         return Array.from(this.content).filter(c => c.match(/[a-z]/i)).join("");
-        
-        // let theLetters = [];
-        // const letterRegEx = /[a-z]/i;
-        // Array.from(this.content).forEach(function(character){
-        //     if(character.match(letterRegEx)) {
-        //         theLetters.push(character);
-        //     }
-        // });
-        // return theLetters.join("");
     };
     
     // Returns true if the phrase is a palindrome, false otherwise. 
     this.palindrome = function palindrome() { 
+        if(this.letters() === "")
+            return false;
+        
         return this.processedContent() === this.processedContent().reverse(); 
     };
 }
